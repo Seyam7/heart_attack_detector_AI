@@ -1,0 +1,7 @@
+1. Library function
+2. Import Dataset
+3. Check dataset is included or not (for own safty)
+4. Clean Dataset
+5. Split Training/Test (after set DF)
+6. Apply algorithm (DT,NV,SVM,RF)
+7. Accuracy

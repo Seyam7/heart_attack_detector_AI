@@ -1,0 +1,45 @@
+# import pandas as pd  # data processing, CSV file I/O (e.g. pd.read_csv)
+import pandas as pd # dataset read
+import numpy as np  # linear algebra
+
+# Data Visualization
+import matplotlib.pyplot as plt # for plotting
+import seaborn as sns # for plotting
+
+# Model Selection
+from sklearn.model_selection import cross_val_score, GridSearchCV
+from sklearn.metrics import accuracy_score, confusion_matrix # for displaying TN, FN, TP, FP
+
+from scipy import misc
+..............................................................
+#Import Random Forest Model
+from sklearn.ensemble import RandomForestClassifier
+# Creating the Random Forest model
+rf = RandomForestClassifier(n_estimators=100)
+
+#Create a SVM classifier
+from sklearn.svm import SVC
+# Creating the SVM model
+clf = SVC(kernel='linear')
+
+
+#Import Logistic Regression
+from sklearn.linear_model import LogisticRegression
+# Creating the Logistic Regression model
+lr = LogisticRegression(max_iter=1000)
+
+# K Nearest Neighbors classifier
+from sklearn.neighbors import KNeighborsClassifier
+# Creating the "K Nearest Neighbors Classifier
+knn = KNeighborsClassifier()
+
+
+# import Naive Bayes classifier
+from sklearn.naive_bayes import GaussianNB
+# Creating the Naive Bayes Classifier
+nb = GaussianNB()
+
+# import Gradient Boosting classifier
+from sklearn.ensemble import GradientBoostingClassifier
+# Creating the Gradient Boosting Classifier
+gb = GradientBoostingClassifier()
